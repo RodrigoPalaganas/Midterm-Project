@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+
+<style type="text/css">
+	body {
+  	background-image: url('image/missy1.jpg');
+			 background-size: cover;
+			 background-attachment: fixed;
+			 margin:0;
+			 padding:0;
+	}
+	form{
+		color: gold;
+		font-family: Bookman Old Style;
+		font-size: 20px;
+		margin-top: 200px;
+	}
+	.log{
+		color: black;
+		text-shadow: gold;
+		font-family: Bookman Old Style;
+	}
+	
+</style>
+<body>
+	<center>
+	<br>
+	<div class="trans">
+		<form>
+			Username: <input type="text" id="uname" class="user"><br>
+			<br>
+			Password: <input type="password" id="pswrd" class="pass"><br>
+		</form>
+		<br>
+		<input type="submit" onclick="login()" value="LOGIN" class="log">
+		</div>
+	</center>
+
+	<script type="text/javascript">
+		
+		function login(){
+			var duname = "rodrigo";
+			var dpswrd = "YellyHaze";
+
+			uname = document.getElementById('uname').value;
+			pswrd = document.getElementById('pswrd').value;
+
+			if (duname == uname  && dpswrd == pswrd){
+				alert("Welcome Master Rodrigo! Welcome to Urdaneta City University");
+			}
+			else if (dpswrd == pswrd){
+				alert("Invalid username");
+			}
+			else if(duname == uname){
+				alert("Invalid Password! Try Another Password Master!");
+			}
+			else{
+				alert("Access Denied! Your not Master Rodrigo");
+			}
+		}
+
+	</script>
+
+
+</body>
+</html>
